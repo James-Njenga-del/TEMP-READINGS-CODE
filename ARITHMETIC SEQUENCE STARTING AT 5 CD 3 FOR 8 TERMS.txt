@@ -1,0 +1,23 @@
+Python 3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> # Step 1: Define the first term, common difference, and number of terms
+>>> first_term = 5
+>>> common_difference = 3
+>>> num_terms = 8
+>>>
+>>> # Step 2: Generate the arithmetic sequence using a loop
+>>> print("Arithmetic Sequence:")
+Arithmetic Sequence:
+>>> for i in range(num_terms):
+...     term = first_term + i * common_difference
+...     print(term)
+...
+5
+8
+11
+14
+17
+20
+23
+26
+>>>
