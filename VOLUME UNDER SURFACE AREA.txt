@@ -1,0 +1,34 @@
+Python 3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> # Step 1: Define the number of intervals
+>>> n = 100  # the more intervals, the more accurate
+>>> dx = 1.0 / n
+>>> dy = 1.0 / n
+>>>
+>>> # Step 2: Initialize volume
+>>> volume = 0.0
+>>>
+>>> # Step 3: Loop over x and y values
+>>> for i in range(n):
+...     for j in range(n):
+...         # Midpoint of the rectangle
+...         x = (i + 0.5) * dx
+...         y = (j + 0.5) * dy
+...
+>>>         # Function value at this point
+>>>         z = x**2 + y**2
+  File "<stdin>", line 1
+    z = x**2 + y**2
+IndentationError: unexpected indent
+>>>
+>>>         # Add volume of this small rectangle
+>>>         volume += z * dx * dy
+  File "<stdin>", line 1
+    volume += z * dx * dy
+IndentationError: unexpected indent
+>>>
+>>> # Step 4: Print the result
+>>> print("Approximate volume under the surface z = x^2 + y^2 is:", volume)
+Approximate volume under the surface z = x^2 + y^2 is: 0.0
+>>>
+>>>
