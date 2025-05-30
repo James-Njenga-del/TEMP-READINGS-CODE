@@ -1,0 +1,23 @@
+Python 3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import matplotlib.pyplot as plt
+>>>
+>>> # Step 1: Define days and temperature readings
+>>> days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
+>>> temperatures = [20, 22, 19, 23, 21, 24, 20]
+>>>
+>>> # Step 2: Plot the data
+>>> plt.plot(days, temperatures, marker='o', linestyle='-', color='b')
+[<matplotlib.lines.Line2D object at 0x0000020A59969F40>]
+>>>
+>>> # Step 3: Add labels and title
+>>> plt.xlabel('Days of the Week')
+Text(0.5, 0, 'Days of the Week')
+>>> plt.ylabel('Temperature (°C)')
+Text(0, 0.5, 'Temperature (°C)')
+>>> plt.title('Temperature Readings Over a Week')
+Text(0.5, 1.0, 'Temperature Readings Over a Week')
+>>>
+>>> # Step 4: Display the graph
+>>> plt.grid(True)
+>>> plt.show()
